@@ -1,0 +1,55 @@
+{
+  "name": "@jpwilliams/sennen-code-test",
+  "version": "0.1.0",
+  "description": "",
+  "bin": "lib/index.js",
+  "scripts": {
+    "clean": "rm -rf lib",
+    "test": "jest --silent",
+    "test:watch": "jest --silent --watchAll",
+    "build": "tsc",
+    "build:watch": "onchange 'src/**/*' -- npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jpwilliams/sennen-code-test.git"
+  },
+  "keywords": [],
+  "author": "Jack Williams <@jpwilliams>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jpwilliams/sennen-code-test/issues"
+  },
+  "homepage": "https://github.com/jpwilliams/sennen-code-test#readme",
+  "files": [
+    "lib"
+  ],
+  "devDependencies": {
+    "@types/jest": "^24.0.24",
+    "@types/node": "^12.12.31",
+    "@types/node-fetch": "^2.5.5",
+    "@typescript-eslint/eslint-plugin": "^2.25.0",
+    "@typescript-eslint/parser": "^2.25.0",
+    "eslint": "^6.8.0",
+    "eslint-import-resolver-typescript": "^2.0.0",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-jest": "^23.1.1",
+    "eslint-plugin-json": "^2.0.1",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "jest": "^24.9.0",
+    "nock": "^12.0.3",
+    "onchange": "^6.1.0",
+    "ts-jest": "^24.2.0",
+    "typedoc": "^0.15.6",
+    "typescript": "^3.8.3"
+  },
+  "dependencies": {
+    "commander": "^5.0.0",
+    "node-fetch": "^2.6.0",
+    "open": "^7.0.3",
+    "ora": "^4.0.3",
+    "ulid": "^2.3.0"
+  }
+}
